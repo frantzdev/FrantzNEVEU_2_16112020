@@ -1,6 +1,6 @@
 #page
 {
-    width: 1200px;
+    max-width: 1340px;
     margin: auto;
 }
                                 
@@ -175,52 +175,43 @@ section {
     display: flex;
 }
 
+.hebergement
+{
+    justify-content: space-between;
+}
+
 .bloc_hebergement
 { 
     background-color: #f2f2f2;
     border-radius: 10px;
-    flex: 2;
-    margin-right: 10px;
-    display: flex;
+    max-width: 880px;
     flex-direction: column;
-}
-
-#hébergements
-{
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-bottom: -5px;
 }
 
 .blocs_articles_hebergement
 {
-    width: 100%;
-    height: 600px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    
+    justify-content: space-evenly; 
 }
 
 .article_hebergement
 {
     border: 5px solid white;
     background-color: white;
-    border-radius: 20px;
-    width: 30%;
-    height: 35%;
+    border-radius: 5px;
+    width: 245px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 15px grey;
-    overflow: hidden;
-    padding-bottom: 10px;
+    margin-top: 30px;
 }
 
 .image
 {
-    width: 100%;
-    height: 60%;
+    width: 245px;
+    height: 115px;
     display: flex;
     text-align: center;
     vertical-align: middle;
@@ -230,17 +221,17 @@ section {
 {
     width: 100%;
     height: auto;
-    border-radius: 15px 15px 0 0;
 }
 
 .description_hebergement
 {
     background-color: white;
+    width: 245px;
 }
 
 .description_hebergement h2, p
 {
-    margin: 5px 0 5px 5px;
+    font-size: 0.8em;
 }
 
 section a{
@@ -251,8 +242,7 @@ section a{
 .afficher_plus
 {
     font-weight: bold;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    
 }
 
                                                                 /*les plus populaires */
@@ -260,78 +250,22 @@ section a{
      .bloc_populaire
      {
          background-color: #f2f2f2;
-         border-radius: 10px;
-         flex: 1;
-         margin-left: 10px;
+         max-width: 420px;
          display: flex;
          flex-direction: column;
      }
 
-     #les_plus_populaires
-     {
-         padding-left: 20px;
-         padding-top: 10px;
-         margin-bottom: 10px;
-     }
-
      .blocs_articles_populaire
      {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;  
+         width: 420px;
      }
-     
+
      .article_populaire
      {
-        width: 90%;
-        height: 25%;
-        display: flex;
-        margin: auto;
-        border: 5px solid white;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px grey;
+         width: 420px;
      }
 
-     .image_populaire
-     {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        text-align: center;
-        vertical-align: middle;   
-     }
-
-     .image_populaire img
-     {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px 0 0 20px;    
-     }
-
-     .descriptif_populaire
-     {
-        width: 100%;
-        background-color: white;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-left: 15px;
-        margin-right: 30px;
-     }
-
-     .descriptif_populaire h2
-     {
-        margin-bottom: -20px;
-     }
-
-     .descriptif_populaire p
-     {
-         margin-left: 0px;
-     }
+     
 
      
 
@@ -346,8 +280,8 @@ section a{
 
     .section_activités
     {
-        width: 100%;
-        height: 500px;
+        width: 1340px;
+    
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -500,13 +434,17 @@ section a{
 
 footer
 {
+    background-color: #f2f2f2; 
+    margin-top: 50px;
+}
+
+.container
+{
     width: 1300px;
     margin: auto;
     display: flex;
     Flex-direction: row;
     justify-content: space-around;
-    background-color: #f2f2f2; 
-    margin-top: 50px;
 }
 
 .colonne_footer1, .colonne_footer2, .colonne_footer3
@@ -518,7 +456,7 @@ footer
 ul
 {
     list-style-type: none;
-    line-height: 200%;
+    line-height: 2em;
     padding-left: 70px;
 }
 
