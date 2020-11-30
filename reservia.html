@@ -13,142 +13,165 @@
     <div id="page">
         <header>
             <div class="logo_et_navigation">
-                <div class="logo_rechercher">
-                    <div class="logo">
-                        <p><img src="Projet_Reservia/images/logo/Reservia.svg" alt="logo_reservia" /></p>
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                        <h2>En plein centre ville ou en pleine nature</h2>
-                    </div>
-                    <div class="bloc_rechercher">
-                        <p class="champ_map"><img src="Projet_Reservia/images/map2.png" alt="icone de carte" /></p>
-                        <form class="champ_text"><input type="text" placeholder="Marseille, France" /></form>
-                        <p class="bouton">Rechercher</p>
-                    </div>
+                <div class="logo">
+                    <p><img src="Projet_Reservia/images/logo/Reservia.svg" alt="logo_reservia" /></p>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>En plein centre ville ou en pleine nature</h2>
                 </div>
                 <nav>
                     <ul>
-                        <li class="hébergements"><a href="#hébergements">Hébergements</a></li>
+                        <li class="hébergements"><a href="#hebergements">Hébergements</a></li>
                         <li class="activités"><a href="#activités">Activités</a></li>
                         <li class="inscrire"><a href="mailto:reservia@hotmail.com">S'inscrire</a></li>
                     </ul>
                 </nav>
             </div>
+
+            <div class="bloc_rechercher">
+                <div class="champ_map"><img src="Projet_Reservia/images/map2.png" alt="icone de carte" /></div>
+                <form class="champ_text"><input type="text" placeholder="Marseille, France" /></form>
+                <form class="Rechercher"><input type="button" name="Rechercher" value="Rechercher" /></form>
+            </div>
             <div class="bloc_filtres">
                 <p>Filtres</p>
-                <div>Economique</div>
-                <div>Familial</div>
-                <div>Romantique</div>
-                <div>Animaux autorisés</div>
+                <div class="economique">
+                    <div class="icone_economique"><img src="Projet_Reservia/images/billet.png"
+                            alt="icone d'un billet de banque" /></div>
+                    <p>Economique</p>
+                </div>
+                <div class="familial">
+                    <div class="icone_familial"><img src="Projet_Reservia/images/child.png" alt="icone d'un enfant" />
+                    </div>
+                    <p>Familial</p>
+                </div>
+                <div class="romantique">
+                    <div class="icone_romantique"><img src="Projet_Reservia/images/heart.png" alt="icone d'un coeur" />
+                    </div>
+                    <p>Romantique</p>
+                </div>
+                <div class="animaux">
+                    <div class="icone_animaux"><img src="Projet_Reservia/images/dog.png"
+                            alt="icone animaux autorisés" /></div>
+                    <p>Animaux autorisés</p>
+                </div>
             </div>
-            <p class="icone_information"><img src="Projet_Reservia/images/info.png" alt="icone d'information" />Plus de
-                500 logements sont disponible dans cette ville</p>
+            <div class="information">
+                <div class="icone_information"><img src="Projet_Reservia/images/info.png" alt="icone d'information" />
+                </div>
+                <p>Plus de 500 logements sont disponible dans cette ville</p>
+            </div>
         </header>
 
         <section class="hebergement_populaire">
             <article class="bloc_hebergement">
-                <h2 id="hébergements">Hébergements à Marseille</h2>
+                <div id="hebergements">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
                 <div class="blocs_articles_hebergement">
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Auberge la Cannebière" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Auberge la Cannebière</h2>
+                            <h3>Auberge la Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </a>
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                 alt="Hôtel du port" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Hôtel du port</h2>
+                            <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
                         </div>
                     </a>
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                 alt="Hôtel les mouettes" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Hôtel les mouettes</h2>
+                            <h3>Hôtel les mouettes</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </a>
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                 alt="Hôtel de la mer" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Hôtel de la mer</h2>
+                            <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </a>
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                 alt="Auberge le panier" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Auberge le panier</h2>
+                            <h3>Auberge le panier</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </a>
 
-                    <a href="#"  class="article_hebergement">
+                    <a href="#" class="article_hebergement">
                         <div class="image">
                             <img src="Projet_Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="Hôtel chez amina" />
                         </div>
                         <div class="description_hebergement">
-                            <h2>Hôtel chez amina</h2>
+                            <h3>Hôtel chez amina</h3>
                             <p>Nuit à partir de 25€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
                         </div>
                     </a>
                 </div>
                 <p class="afficher_plus">Afficher plus</p>
             </article>
             <article class="bloc_populaire">
-                <h2 id="les_plus_populaires">Les plus populaires</h2>
+                <div id="les_plus_populaires">
+                    <h2>Les plus populaires</h2>
+                    <p><img src="projet_Reservia/images/graphique..png" alt="Ligne graphique" /></p>
+                </div>
                 <div class="blocs_articles_populaire">
                     <div class="article_populaire">
                         <div class="image_populaire">
@@ -156,13 +179,13 @@
                                 alt="Hôtel le soleil du matins">
                         </div>
                         <div class="descriptif_populaire">
-                            <h2>Hôtel le soleil du matin</h2>
+                            <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /></p>
                         </div>
                     </div>
                     <div class="article_populaire">
@@ -171,13 +194,13 @@
                                 alt="Au coeur de l'eau Chambre d'hôtes">
                         </div>
                         <div class="descriptif_populaire">
-                            <h2>Au coeur de l'eau Chambre d'hôtes</h2>
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                             <p>Nuit à partir de 128€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </div>
                     <div class="article_populaire">
@@ -186,13 +209,13 @@
                                 alt="Hôtel tout bleu et blanc">
                         </div>
                         <div class="descriptif_populaire">
-                            <h2>Hôtel tout bleu et blanc</h2>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 128€</p>
                             <p><img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
-                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" />
-                                <img src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_bleu.png" alt="Etoile" /><img
+                                    src="Projet_Reservia/images/etoile_grise.png" alt="Etoile" /></p>
                         </div>
                     </div>
                 </div>
@@ -204,7 +227,7 @@
             <h2 id="activités">Activités à Marseille</h2>
             <div class="bloc_colonnes_activités">
 
-                <a href="#"  class="bloc_port">
+                <a href="#" class="bloc_port">
                     <div class="photo_port">
                         <img src="Projet_Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                             alt="Vieux port" />
@@ -215,7 +238,7 @@
                 </a>
 
                 <div class="bloc_fort_lunette">
-                    <a href="#"  class="bloc_fort">
+                    <a href="#" class="bloc_fort">
                         <div class="photo_fort">
                             <img src="Projet_Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                 alt="Fort de Pomègues" />
@@ -225,7 +248,7 @@
                         </div>
                     </a>
 
-                    <a href="#"  class="bloc_lunette">
+                    <a href="#" class="bloc_lunette">
                         <div class="photo_lunette">
                             <img src="Projet_Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                                 alt="îles du Frioul" />
@@ -236,7 +259,7 @@
                     </a>
                 </div>
 
-                <a href="#"  class="bloc_calanques">
+                <a href="#" class="bloc_calanques">
                     <div class="photo_calanques">
                         <img src="Projet_Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                             alt="Parc national des Calanques" />
@@ -247,7 +270,7 @@
                 </a>
 
                 <div class="bloc_dame_longchamp">
-                    <a href="#"  class="bloc_dame">
+                    <a href="#" class="bloc_dame">
                         <div class="photo_dame">
                             <img src="Projet_Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                                 alt="Notre-dame-de-la-garde" />
@@ -256,7 +279,7 @@
                             <p>Notre-dame-de-la-garde</p>
                         </div>
                     </a>
-                    <a href="#"  class="bloc_longchamp">
+                    <a href="#" class="bloc_longchamp">
                         <div class="photo_longchamp">
                             <img src="Projet_Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                                 alt="Parc Longchamp" />
@@ -296,7 +319,7 @@
                     <li>Nous contacter</li>
                 </ul>
             </div>
-        </div>    
+        </div>
 
     </footer>
 
