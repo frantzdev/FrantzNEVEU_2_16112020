@@ -12,6 +12,7 @@
     font-weight: normal;
 }
 
+
 /*------------------------------------HAUT DE PAGE--------------------------------*/
 header {
     display: flex;
@@ -29,12 +30,10 @@ header h2 {
 }
 
 .logo_et_navigation {
-    width: 1340px;
+    max-width: 1340px;
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .logo {
     width: 600px;
@@ -89,14 +88,27 @@ input[type="button"] {
     border: none;
 }
 
-.bloc_filtres {
+.titre {
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.filtre_et_titre {
     width: 950px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.filtre {
+    width: 900px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1em;
-    font-weight: bolder;
 }
 
 .economique,
@@ -191,7 +203,7 @@ a[href="#activités"] {
     color: black;
 }
 
-.bloc_filtres div:hover {
+.filtre_et_icone div:hover {
     color: green;
 }
 
@@ -222,9 +234,10 @@ section {
 .bloc_hebergement {
     background-color: #f2f2f2;
     border-radius: 20px;
-    max-width: 880px;
+    width: 880px;
     height: 625px;
     flex-direction: column;
+    justify-content: center;
 }
 
 .bloc_populaire {
@@ -250,12 +263,13 @@ section {
 
 .afficher_plus {
     padding-left: 40px;
-    margin-top: 10px;
+    margin-top: 0px;
     font-weight: bold;
 }
 
 .blocs_articles_hebergement {
-    height: 455px;
+
+    height: 480px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -387,7 +401,7 @@ section a {
 
 .section_activités {
     margin-top: 50px;
-    width: 1340px;
+    max-width: 1340px;
     display: flex;
     flex-direction: column;
 }
@@ -398,7 +412,7 @@ section a {
 
 .bloc_colonnes_activités {
 
-    width: 1340px;
+    max-width: 1340px;
     height: 445px;
     display: flex;
     flex-direction: row;
@@ -517,7 +531,7 @@ footer {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     Flex-direction: row;
@@ -542,13 +556,224 @@ ul {
 }
 
 
+/*------------------------------------media query --------------------------------*/
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    #page {
+        width: 100%;
+        margin: auto;
+    }
+
+    .logo_et_navigation {
+        width: 320px;
+        height: 170px;
+        flex-direction: column;
+
+    }
+
+    .logo img {
+        width: 160px;
+        height: 90px;
+    }
+
+    nav ul {
+        font-size: 1.8em;
+    }
+
+    .filtre_et_titre {
+        width: 320px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start
+    }
+
+    .filtre {
+        width: 320px;
+        height: 240px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+
+    .information {
+        width: 320px; 
+        display: flex;
+        align-items: baseline; 
+        margin-bottom: 30px; 
+    }
+
+    .information p{
+        padding-left: 10px;
+    }
 
 
 
+    .hebergement_populaire {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-color: #f2f2f2;
+    }
+
+    .bloc_populaire {
+        width: 320px;
+        height: 580px;
+        border-radius: unset;
+    }
+
+    
+
+    .blocs_articles_populaire {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .article_populaire {
+        width: 305px;
+        height: 135px;
+        border-radius: 10px;
+    }
+
+    .image_populaire {
+        width: 125px;
+        height: 135px;
+    }
+
+    .descriptif_populaire {
+        width: 195px;
+        height: 135px;
+    }
+
+    .bloc_hebergement {
+        width: 320px;
+        height: 1420px;
+        background-color: white;
+        border-radius: unset;
+    }
+
+    #hebergements{
+        padding-left: 20px;
+    }
+
+    .blocs_articles_hebergement {
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .article_hebergement {
+        width: 305px;
+        height: 190px;
+
+    }
+
+    .image {
+        width: 305px;
+        height: 115px;
+        display: flex;
+    }
+
+    .afficher_plus
+    {
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+
+    .section_activités {
+        width: 320px;
+        height: 1400px;
+    }
+
+    #activités{
+        padding-left :15px;
+        font-size: 1.5em;
+    }
+
+    .bloc_colonnes_activités {
+        width: 320px;
+        height: 1360px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bloc_dame_longchamp,
+    .bloc_fort_lunette {
+        height: 415px;
+    }
+
+    .bloc_port,
+    .bloc_calanques,
+    .bloc_fort,
+    .bloc_lunette,
+    .bloc_dame,
+    .bloc_longchamp {
+        width: 305px;
+        height: 190px;
+    }
+
+    .photo_port,
+    .photo_calanques,
+    .photo_fort,
+    .photo_lunette,
+    .photo_dame,
+    .photo_longchamp {
+        height: 130px;
+    }
+
+    
+
+    footer{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 320px;
+        height: 490px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .colonne_footer1, .colonne_footer2, .colonne_footer3{
+        width: 320px;
+    }
+
+    .container h2, .container ul{
+        padding-left: 20px;
+    }
+}
+
+/* .logo_et_navigation {
+    max-width: 1340px;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
+.logo {
+    width: 600px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
 
-
-.
+nav li {
+    margin: 0 20px 0 20px;
+    padding: 0 20px 0 10px;
+    font-size: 0.9em;
+} */
