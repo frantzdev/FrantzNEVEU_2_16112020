@@ -13,14 +13,15 @@
 }
 
 
-                                            /*------------------------------------Header--------------------------------*/
+/*------------------------------------Header--------------------------------*/
 header {
     display: flex;
     flex-direction: column;
     font-family: 'raleway', sans-serif;
 }
 
-header h1 {  /*titre*/
+header h1 {
+    /*titre*/
     Font-size: 1.3em;
 }
 
@@ -29,7 +30,8 @@ header h2 {
     color: #aaa5a5;
 }
 
-.logo_et_navigation { /* logo et menu de navigation*/
+.logo_et_navigation {
+    /* logo et menu de navigation*/
     max-width: 1340px;
     display: flex;
     justify-content: space-between;
@@ -51,15 +53,18 @@ li a {
     text-decoration: none;
 }
 
-a[href="#activites"] {  /* change la couleur de l'ancre activites */
+a[href="#activites"] {
+    /* change la couleur de l'ancre activites */
     color: black;
 }
 
-.filtre :hover {   /*survol des filtres */
+.filtre :hover {
+    /*survol des filtres */
     color: green;
 }
 
-.bloc_rechercher {  /*barre de recherche*/
+.bloc_rechercher {
+    /*barre de recherche*/
     width: 430px;
     height: 70px;
     display: flex;
@@ -104,7 +109,8 @@ input[type="button"] {
     border: none;
 }
 
-.bloc_filtre {  /* menu des filtres */
+.bloc_filtre {
+    /* menu des filtres */
     width: 900px;
     height: 80px;
     display: flex;
@@ -113,11 +119,13 @@ input[type="button"] {
     font-weight: bolder;
 }
 
-.bloc_filtre p { /*le mot filtre */
+.bloc_filtre p {
+    /*le mot filtre */
     padding-right: 20px;
 }
 
-.filtre {  /* 4 champs de filtre */
+.filtre {
+    /* 4 champs de filtre */
     width: 850px;
     display: flex;
     justify-content: space-between;
@@ -165,7 +173,8 @@ input[type="button"] {
 }
 
 .economique p,
-.familial p,     /*crée le decalage dans le champ */
+.familial p,
+/*crée le decalage dans le champ */
 .romantique p,
 .animaux p {
     margin-left: 10px;
@@ -194,7 +203,7 @@ input[type="button"] {
 
 
 
-                                    /*------------------------------------SECTION-----------------------------------*/
+/*------------------------------------SECTION-----------------------------------*/
 
 
 
@@ -202,18 +211,21 @@ body {
     font-family: 'raleway', sans-serif;
 }
 
-h2 { 
-    font-size: 1.1em;
+h2 {
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 
-.hebergement_populaire {  /* section contient le bloc hebergement et populaire */
+.hebergement_populaire {
+    /* section contient le bloc hebergement et populaire */
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.bloc_hebergement {  /* conteneur titre + les articles hebergement */
+.bloc_hebergement {
+    /* conteneur titre + les articles hebergement */
     background-color: #f2f2f2;
     border-radius: 20px;
     width: 880px;
@@ -222,16 +234,16 @@ h2 {
     justify-content: center;
 }
 
-#hebergements {  /*titre hebergement */
+#hebergements {
+    /*titre hebergement */
     height: 90px;
     padding-left: 40px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
-#hebergements h2 {
-    padding-top: 20px;
-}
 
 .afficher_plus {
     padding-left: 40px;
@@ -239,7 +251,8 @@ h2 {
     font-weight: bold;
 }
 
-.blocs_articles_hebergement { /*conteneur des articles */
+.blocs_articles_hebergement {
+    /*conteneur des articles */
 
     height: 480px;
     display: flex;
@@ -295,27 +308,30 @@ h2 {
 }
 
 
-section a {  /* supprime l'affichage des liens */
+.hebergement_populaire a, .section_activites a {
+    /* supprime l'affichage des liens */
     text-decoration: none;
     color: black;
 }
 
 
 
-                                                                        /*les plus populaires */
+/*les plus populaires */
 
 
-    .bloc_populaire {  /* conteneur titre + les articles populaire*/
-        background-color: #f2f2f2;
-        border-radius: 20px;
-        max-width: 420px;
-        height: 625px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+.bloc_populaire {
+    /* conteneur titre + les articles populaire*/
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 420px;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    .blocs_articles_populaire { /*conteneur des articles populaire */
+.blocs_articles_populaire {
+    /*conteneur des articles populaire */
     width: 420px;
     height: 530px;
     display: flex;
@@ -351,6 +367,7 @@ section a {  /* supprime l'affichage des liens */
     width: 205px;
     height: 134px;
     background-color: white;
+    border-radius: 0 10px 10px 0;
 }
 
 .descriptif_populaire h3 {
@@ -361,14 +378,15 @@ section a {  /* supprime l'affichage des liens */
 .descriptif_populaire p {
     padding-left: 20px;
     font-size: 0.8em;
+    
 }
 
-#les_plus_populaires { /*ancre */
+#les_plus_populaires {
+    /*ancre */
     height: 90px;
     display: flex;
     justify-content: space-around;
     align-content: center;
-    font-size: 1.3em;
 }
 
 #les_plus_populaires h2,
@@ -380,20 +398,19 @@ section a {  /* supprime l'affichage des liens */
 
 
 
-                                                                                /* les activites */
+/* les activites */
 
-.section_activites {  /*conteneur des colonnes activites */
+.section_activites {
+    /*conteneur des colonnes activites */
     margin-top: 50px;
     max-width: 1340px;
     display: flex;
     flex-direction: column;
 }
 
-.section_activites h2 { /*titre */
-    font-weight: bold;
-}
 
-.bloc_colonnes_activites { /* conteneur des 4 colonnes */
+.bloc_colonnes_activites {
+    /* conteneur des 4 colonnes */
 
     max-width: 1340px;
     height: 445px;
@@ -410,7 +427,7 @@ section a {  /* supprime l'affichage des liens */
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 2px 15px grey;
-    overflow: hidden;
+    overflow: hidden;  /* pour masquer le débordement des coins de l'image */
 }
 
 /* 2eme et 4eme colonne*/
@@ -447,6 +464,7 @@ section a {  /* supprime l'affichage des liens */
     display: flex;
     flex-direction: column;
     height: 195px;
+    overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 2px 15px grey;
 }
@@ -455,6 +473,7 @@ section a {  /* supprime l'affichage des liens */
     display: flex;
     flex-direction: column;
     height: 210px;
+    overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 2px 15px grey;
 }
@@ -538,7 +557,7 @@ ul {
 }
 
 
-/*------------------------------------media query --------------------------------*/
+/*------------------------------------media queries --------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
 
@@ -564,7 +583,7 @@ ul {
     }
 
     .inscrire {
-        position: absolute;
+        position: absolute; /* pour placer le mot inscrire */
         right: -30px;
         top: -55px;
         font-weight: bold;
@@ -628,8 +647,6 @@ ul {
     .information p {
         padding-left: 10px;
     }
-
-
 
     .hebergement_populaire {
         flex-direction: column-reverse;
@@ -774,7 +791,7 @@ ul {
     }
 }
 
-/* -----------------media query---------------*/
+/* -----------------media queries  iphone ---------------*/
 
 @media screen and (max-width: 375px) {
 
@@ -906,4 +923,80 @@ ul {
     .container ul {
         padding-left: 0px;
     }
+}
+    /*----------------------------Media queries  tablette -----------------*/
+
+@media screen and (min-width: 376px) and (max-width: 1023px) {
+    
+    #page {
+        width: 768px;
+        margin: auto;
+    }
+    
+    .bloc_filtre {
+        width: 760px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .filtre {
+        width: 760px;
+        flex-wrap: wrap;
+    }
+
+    .economique, .familial, .romantique, .animaux {
+        margin: 10px 0 10px 0;
+    }
+
+    .hebergement_populaire {
+        width: 768px;
+        flex-direction: column;
+    }
+
+    .bloc_hebergement {
+        width: 760px;
+        margin-bottom: 50px;
+    }
+
+    .bloc_populaire {
+        width: 760px;
+        height : 500px;
+    }
+
+    .blocs_articles_populaire {
+        width: 768px;
+        height: 350px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .section_activites {   
+        width: 768px;
+        height: 1050px;
+
+    }
+
+    .bloc_colonnes_activites {
+        width: 768px;
+        height: 1000px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bloc_fort_lunette, .bloc_dame_longchamp {
+        height: 445px;
+    }
+
+    #activites {
+        padding-left: 50px;
+    }
+    
+    footer {
+        width: 768px;
+    }
+    
+    
+
+    
 }
