@@ -308,7 +308,8 @@ h2 {
 }
 
 
-.hebergement_populaire a, .section_activites a {
+.hebergement_populaire a,
+.section_activites a {
     /* supprime l'affichage des liens */
     text-decoration: none;
     color: black;
@@ -378,7 +379,7 @@ h2 {
 .descriptif_populaire p {
     padding-left: 20px;
     font-size: 0.8em;
-    
+
 }
 
 #les_plus_populaires {
@@ -427,7 +428,8 @@ h2 {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 2px 15px grey;
-    overflow: hidden;  /* pour masquer le débordement des coins de l'image */
+    overflow: hidden;
+    /* pour masquer le débordement des coins de l'image */
 }
 
 /* 2eme et 4eme colonne*/
@@ -583,7 +585,8 @@ ul {
     }
 
     .inscrire {
-        position: absolute; /* pour placer le mot inscrire */
+        position: absolute;
+        /* pour placer le mot inscrire */
         right: -30px;
         top: -55px;
         font-weight: bold;
@@ -924,15 +927,16 @@ ul {
         padding-left: 0px;
     }
 }
-    /*----------------------------Media queries  tablette -----------------*/
+
+/*----------------------------Media queries  tablette -----------------*/
 
 @media screen and (min-width: 376px) and (max-width: 1023px) {
-    
+
     #page {
         width: 768px;
         margin: auto;
     }
-    
+
     .bloc_filtre {
         width: 760px;
         margin-bottom: 50px;
@@ -944,7 +948,10 @@ ul {
         flex-wrap: wrap;
     }
 
-    .economique, .familial, .romantique, .animaux {
+    .economique,
+    .familial,
+    .romantique,
+    .animaux {
         margin: 10px 0 10px 0;
     }
 
@@ -960,7 +967,7 @@ ul {
 
     .bloc_populaire {
         width: 760px;
-        height : 500px;
+        height: 500px;
     }
 
     .blocs_articles_populaire {
@@ -969,8 +976,8 @@ ul {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
-    .section_activites {   
+
+    .section_activites {
         width: 768px;
         height: 1050px;
 
@@ -984,19 +991,20 @@ ul {
         align-items: center;
     }
 
-    .bloc_fort_lunette, .bloc_dame_longchamp {
+    .bloc_fort_lunette,
+    .bloc_dame_longchamp {
         height: 445px;
     }
 
     #activites {
         padding-left: 50px;
     }
-    
+
     footer {
         width: 768px;
     }
-    
-    
 
-    
+
+
+
 }
