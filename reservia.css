@@ -113,7 +113,15 @@ input[type="button"] {
     align-items: center;
     font-size: 1.1em;
     font-weight: bolder;
+<<<<<<< HEAD
     
+=======
+    margin-top: 20px;
+}
+
+.bloc_filtre p {
+    margin-right: 15px;
+>>>>>>> gh-pages
 }
 
 .filtre {
@@ -137,7 +145,11 @@ input[type="button"] {
     display: flex;
     align-items: center;
     border: 2px solid #f2f2f2;
+<<<<<<< HEAD
     margin-right: 15px;
+=======
+    margin-right: 13px;
+>>>>>>> gh-pages
     margin-bottom: 10px;
 }
 
@@ -152,7 +164,11 @@ input[type="button"] {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> gh-pages
 }
 
 .economique {
@@ -219,7 +235,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+<<<<<<< HEAD
     margin-top: 30px;
+=======
+    margin-top: 20px;
+>>>>>>> gh-pages
 }
 
 .bloc_hebergement {
@@ -240,6 +260,10 @@ h2 {
 
 .afficher_plus {
     padding-left: 40px;
+<<<<<<< HEAD
+=======
+    padding-bottom: 20px;
+>>>>>>> gh-pages
     font-weight: bold;
 }
 
@@ -252,7 +276,11 @@ h2 {
 }
 
 .article_hebergement {
+<<<<<<< HEAD
     margin: 20px 0 20px 0;
+=======
+    margin: 15px 0 15px 0;
+>>>>>>> gh-pages
     border: 5px solid white;
     background-color: white;
     border-radius: 15px;
@@ -272,11 +300,14 @@ h2 {
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+<<<<<<< HEAD
+=======
+    object-fit: cover;
+>>>>>>> gh-pages
 }
 
 .description_hebergement {
     background-color: white;
-    width: 235px;
     height: 75px;
 }
 
@@ -301,14 +332,22 @@ h2 {
 
 i {
     color: #0065FC;
+<<<<<<< HEAD
 }
 
 span i {
     color:#e2dede;
+=======
+>>>>>>> gh-pages
+}
+
+span i {
+    color: #e2dede;
 }
 
 
-.hebergement_populaire a, .section_activites a {
+.hebergement_populaire a,
+.section_activites a {
     /* supprime l'affichage des liens */
     text-decoration: none;
     color: black;
@@ -324,10 +363,17 @@ span i {
     border-radius: 20px;
     width: 420px;
     display: flex;
+<<<<<<< HEAD
     flex-direction: column; 
 }
 
 #les_plus_populaires { 
+=======
+    flex-direction: column;
+}
+
+#les_plus_populaires {
+>>>>>>> gh-pages
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 20px;
@@ -353,7 +399,11 @@ span i {
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+<<<<<<< HEAD
     
+=======
+    overflow: hidden;
+>>>>>>> gh-pages
 }
 
 .image_populaire {
@@ -366,11 +416,18 @@ span i {
 .image_populaire img {
     width: 100%;
     border-radius: 10px 0 0 10px;
+<<<<<<< HEAD
     object-fit: cover; /*permet de régler l'image*/
 }
 
 .descriptif_populaire {
     max-width: 205px;
+=======
+    object-fit: cover;
+}
+
+.descriptif_populaire {
+>>>>>>> gh-pages
     background-color: white;
     border-radius: 0 10px 10px 0;
 }
@@ -413,7 +470,8 @@ span i {
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 2px 15px grey;
-    overflow: hidden;  /* pour masquer le débordement des coins de l'image */
+    overflow: hidden;
+    /* pour masquer le débordement des coins de l'image */
 }
 
 /* 2eme et 4eme colonne*/
@@ -539,7 +597,11 @@ footer {
     padding-left: 50px;
 }
 
+<<<<<<< HEAD
  footer ul {
+=======
+footer ul {
+>>>>>>> gh-pages
     list-style-type: none;
     line-height: 2em;
     padding-left: 50px;
@@ -548,6 +610,7 @@ footer {
 
 /*------------------------------------media queries --------------------------------*/
 
+<<<<<<< HEAD
 @media all and  (max-width: 1315px) {
 
 .hebergement_populaire {   
@@ -602,8 +665,31 @@ footer {
     .container {
         flex-direction: column;
         justify-content: space-between;
+=======
+@media all and (max-width: 1315px) {
+
+    .hebergement_populaire {
+        justify-content: center;
     }
 
+    .bloc_populaire {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media all and (max-width: 1214px) {
+
+    .bloc_dame,
+    .bloc_longchamp {
+        margin-top: 20px;
+>>>>>>> gh-pages
+    }
+}
+
+<<<<<<< HEAD
     .colonne_footer1, .colonne_footer2, .colonne_footer3 {
         width: 100%;
     }
@@ -612,6 +698,51 @@ footer {
         display: flex;
     }
     
+=======
+@media all and (max-width: 915px) {
+
+    .bloc_colonnes_activites {
+        justify-content: space-evenly;
+    }
+
+    .bloc_calanques {
+        margin-top: 20px;
+    }
+
+}
+
+@media all and (max-width: 615px) {
+
+
+    .hebergement_populaire {
+        flex-wrap: wrap-reverse;
+    }
+
+    .bloc_fort,
+    .bloc_lunette {
+        margin-top: 20px;
+    }
+
+    .section_activites h2 {
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .colonne_footer1,
+    .colonne_footer2,
+    .colonne_footer3 {
+        width: 100%;
+    }
+
+    .ligne_couleur {
+        display: flex;
+    }
+
+>>>>>>> gh-pages
     .ligne_bleu {
         width: 50%;
         border: 3px solid #0065FC;
@@ -621,6 +752,7 @@ footer {
         width: 50%;
         border: 3px solid #f2f2f2;
     }
+<<<<<<< HEAD
 }
 
 @media all and ( max-width: 440px) {
@@ -682,3 +814,80 @@ footer {
     
 }
 
+=======
+
+    .bloc_port,
+    .bloc_fort,
+    .bloc_lunette,
+    .bloc_calanques,
+    .bloc_dame,
+    .bloc_longchamp {
+        width: 335px;
+        height: 190px;
+    }
+
+    .bloc_port img,
+    .bloc_fort img,
+    .bloc_lunette img,
+    .bloc_calanques img,
+    .bloc_dame img,
+    .bloc_longchamp img,
+    .photo_lunette {
+        height: 130px;
+    }
+
+    .bloc_fort_lunette,
+    .bloc_dame_longchamp {
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 440px) {
+
+
+    nav {
+        position: relative;
+    }
+
+    .inscrire {
+        position: absolute;
+        right: 0px;
+        top: -40px;
+        font-weight: bold;
+    }
+
+    input[type="button"] {
+        width: 50px;
+        font-size: 0px;
+    }
+
+    .Rechercher {
+        position: relative;
+    }
+
+    .Rechercher .fas {
+        position: absolute;
+        font-size: 100%;
+        color: white;
+        right: 20px;
+        top: 15px;
+    }
+
+    .economique {
+        width: 175px;
+    }
+
+    .bloc_hebergement {
+        background-color: unset;
+    }
+    
+    .article_hebergement {
+        width: 320px;
+    }
+
+    .image {
+        width: 320px;
+        height: 115px;
+    }
+}
+>>>>>>> gh-pages
