@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 nav ul {
@@ -52,12 +53,17 @@ a[href="#activites"] {
 h1 {
     /*titre*/
     Font-size: 1.3em;
+    padding: 0px 10px;
+}
+
+.ville {
+    padding: 0px 10px;
 }
 
 .bloc_rechercher {
     /*barre de recherche*/
     max-width: 430px;
-    height: 70px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -117,14 +123,14 @@ input[type="button"] {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     font-size: 1.1em;
     font-weight: bolder;
-    margin-top: 20px;
+    padding: 10px;
 }
 
-.bloc_filtre p {
-    margin-right: 15px;
+.bloc_filtre .titre {
+    padding-right: 15px;
+    padding-left: 10px;
 }
 
 .filtre {
@@ -157,31 +163,13 @@ input[type="button"] {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.economique {
-    width: 195px;
-}
-
-.familial {
-    width: 150px;
-}
-
-.romantique {
-    width: 180px;
-}
-
-.animaux {
-    width: 240px;
 }
 
 .economique p,
 .familial p,
-/*crée le decalage dans le champ */
 .romantique p,
 .animaux p {
-    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .filtre :hover {
@@ -191,6 +179,7 @@ input[type="button"] {
 
 .information {
     max-width: 430px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -402,6 +391,7 @@ span i {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -560,7 +550,7 @@ footer ul {
 
     .bloc_populaire {
         width: 860px;
-        margin-top: 10px;
+        margin: 10px 0;
     }
 
     .blocs_articles_populaire {
@@ -598,6 +588,18 @@ footer ul {
         flex-wrap: wrap-reverse;
     }
 
+    .bloc_populaire, .bloc_hebergement {
+        border-radius: unset;
+    }
+
+    .blocs_articles_populaire {
+        justify-content: center;
+    }
+
+    .section_activites {
+        margin-top: 0px;
+    }
+
     .bloc_fort,
     .bloc_lunette {
         margin-top: 20px;
@@ -616,20 +618,6 @@ footer ul {
     .colonne_footer2,
     .colonne_footer3 {
         width: 100%;
-    }
-
-    .ligne_couleur {
-        display: flex;
-    }
-
-    .ligne_bleu {
-        width: 50%;
-        border: 3px solid #0065FC;
-    }
-
-    .ligne_grise {
-        width: 50%;
-        border: 3px solid #f2f2f2;
     }
 
     .bloc_port,
@@ -672,9 +660,27 @@ footer ul {
         font-weight: bold;
     }
 
+    .ligne_couleur {
+        display: flex;
+    }
+
+    .ligne_bleu {
+        width: 50%;
+        border: 3px solid #0065FC;
+    }
+
+    .ligne_grise {
+        width: 50%;
+        border: 3px solid #f2f2f2;
+    }
+
     input[type="button"] {
         width: 50px;
         font-size: 0px;
+    }
+
+    .bloc_rechercher {
+        justify-content: center;
     }
 
     .Rechercher {
@@ -687,10 +693,6 @@ footer ul {
         color: white;
         right: 20px;
         top: 15px;
-    }
-
-    .economique {
-        width: 175px;
     }
 
     .bloc_hebergement {
