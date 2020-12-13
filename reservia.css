@@ -567,13 +567,13 @@ footer ul {
     .bloc_longchamp {
         margin-top: 20px;
     }
+
+    .bloc_colonnes_activites {
+        justify-content: space-around;
+    }
 }
 
 @media all and (max-width: 915px) {
-
-    .bloc_colonnes_activites {
-        justify-content: space-evenly;
-    }
 
     .bloc_calanques {
         margin-top: 20px;
