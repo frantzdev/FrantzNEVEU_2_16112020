@@ -16,7 +16,11 @@
         <header>
             <p class="logo"><img src="Projet_Reservia/images/logo/Reservia.svg" alt="logo_reservia" /></p>
 
-            <nav>
+            <nav class="header__nav">
+                <div class="ligne_couleur">
+                    <p class="ligne_bleu"></p>
+                    <p class="ligne_grise"></p>
+                </div>
                 <ul>
                     <li class="hébergements"><a href="#hebergements">Hébergements</a></li>
                     <li class="activites"><a href="#activites">Activités</a></li>
@@ -24,26 +28,20 @@
                 </ul>
             </nav>
         </header>
-        <div class="ligne_couleur">
-            <p class="ligne_bleu"></p>
-            <p class="ligne_grise"></p>
-        </div>
+        
 
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p class="ville">En plein centre ville ou en pleine nature</p>
 
         <div class="bloc_rechercher">
             <div class="champ_map"><i class="fas fa-map-marker-alt"></i></div>
             <form class="champ_text"><input type="text" placeholder="Marseille, France" /></form>
-            <form class="Rechercher"><input type="button" name="Rechercher" value="Rechercher" /><i class="fas fa-search"></i></form>
+            <form class="Rechercher"><input type="button" name="Rechercher" value="Rechercher" /><i
+                    class="fas fa-search"></i></form>
         </div>
 
         <div class="bloc_filtre">
-<<<<<<< HEAD
-            <p class="label">Filtres</p>
-=======
-            <p>Filtres</p>
->>>>>>> gh-pages
+            <p class="titre">Filtres</p>
             <div class="filtre">
                 <div class="economique">
                     <div class="icone_economique"><i class="fas fa-money-bill-wave"></i>
@@ -107,7 +105,7 @@
                             <h3>Hôtel du port</h3>
                             <p>Nuit à partir de 25€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </a>
 
@@ -120,7 +118,7 @@
                             <h3>Hôtel les mouettes</h3>
                             <p>Nuit à partir de 25€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
                         </div>
                     </a>
 
@@ -132,8 +130,9 @@
                         <div class="description_hebergement">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 25€</p>
-                            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+                            <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span></div>
                         </div>
                     </a>
 
@@ -146,7 +145,7 @@
                             <h3>Auberge le panier</h3>
                             <p>Nuit à partir de 25€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
                         </div>
                     </a>
 
@@ -159,19 +158,19 @@
                             <h3>Hôtel chez amina</h3>
                             <p>Nuit à partir de 25€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </a>
                 </div>
                 <p class="afficher_plus">Afficher plus</p>
             </article>
-           
-           
+
+
             <article class="bloc_populaire">
                 <h2 id="les_plus_populaires">Les plus populaires<i class="fas fa-chart-line"></i></h2>
                 <div class="blocs_articles_populaire">
                     <div class="article_populaire">
-                        <div class="image_populaire">
+                        <div class="image_populaire_soleil">
                             <img src="Projet_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                 alt="Hôtel le soleil du matins">
                         </div>
@@ -179,11 +178,11 @@
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
                         </div>
                     </div>
                     <div class="article_populaire">
-                        <div class="image_populaire">
+                        <div class="image_populaire_eau">
                             <img src="Projet_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                                 alt="Au coeur de l'eau Chambre d'hôtes">
                         </div>
@@ -191,11 +190,11 @@
                             <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                             <p>Nuit à partir de 128€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
                         </div>
                     </div>
                     <div class="article_populaire">
-                        <div class="image_populaire">
+                        <div class="image_populaire_bleu">
                             <img src="Projet_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                                 alt="Hôtel tout bleu et blanc">
                         </div>
@@ -203,7 +202,7 @@
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 128€</p>
                             <div><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
+                                    class="fas fa-star"></i><span><i class="fas fa-star"></i></span></div>
                         </div>
                     </div>
                 </div>

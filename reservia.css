@@ -1,8 +1,15 @@
+body {
+    margin: 0;
+
+}
+
 #page {
     max-width: 1340px;
     margin: auto;
     font-family: 'raleway', sans-serif;
 }
+
+
 
 
 @font-face {
@@ -21,20 +28,55 @@ header {
     flex-wrap: wrap;
 }
 
+.logo {
+    padding: 10px;
+    margin: 0 0;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.ligne_couleur {
+    display: flex;
+
+}
+
+.ligne_bleu {
+    width: 50%;
+    border: 1px solid #0065FC;
+}
+
+.ligne_grise {
+    width: 50%;
+    border: 1px solid #f2f2f2;
+}
+     
 nav ul {
     list-style-type: none;
     display: flex;
+    padding-left: 20px;
 }
 
 nav li {
-    margin: 0 20px 0 20px;
-    padding: 0 20px 0 10px;
-    font-size: 0.9em;
+    
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: -10px 0;
 }
 
 li a {
     color: #0065FC;
     text-decoration: none;
+}
+
+.hébergements :hover {
+    color: #5a96f0;
+}
+
+.inscrire :hover {
+    color: #5a96f0;
 }
 
 a[href="#activites"] {
@@ -45,12 +87,17 @@ a[href="#activites"] {
 h1 {
     /*titre*/
     Font-size: 1.3em;
+    padding: 0px 10px;
+}
+
+.ville {
+    padding: 0px 10px;
 }
 
 .bloc_rechercher {
     /*barre de recherche*/
     max-width: 430px;
-    height: 70px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -110,18 +157,14 @@ input[type="button"] {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     font-size: 1.1em;
     font-weight: bolder;
-<<<<<<< HEAD
-    
-=======
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.bloc_filtre p {
-    margin-right: 15px;
->>>>>>> gh-pages
+.bloc_filtre .titre {
+    padding-right: 15px;
+    padding-left: 10px;
 }
 
 .filtre {
@@ -145,11 +188,7 @@ input[type="button"] {
     display: flex;
     align-items: center;
     border: 2px solid #f2f2f2;
-<<<<<<< HEAD
-    margin-right: 15px;
-=======
     margin-right: 13px;
->>>>>>> gh-pages
     margin-bottom: 10px;
 }
 
@@ -164,11 +203,6 @@ input[type="button"] {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> gh-pages
 }
 
 .economique {
@@ -185,14 +219,15 @@ input[type="button"] {
 
 .animaux {
     width: 240px;
+=======
+>>>>>>> gh-pages
 }
 
 .economique p,
 .familial p,
-/*crée le decalage dans le champ */
 .romantique p,
 .animaux p {
-    margin: auto;
+    padding: 10px 10px 10px 10px;
 }
 
 .filtre :hover {
@@ -202,6 +237,7 @@ input[type="button"] {
 
 .information {
     max-width: 430px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
@@ -235,18 +271,15 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-<<<<<<< HEAD
-    margin-top: 30px;
-=======
     margin-top: 20px;
->>>>>>> gh-pages
 }
 
 .bloc_hebergement {
     /* conteneur titre + les articles hebergement */
     background-color: #f2f2f2;
     border-radius: 20px;
-    max-width: 880px;
+    max-width: 860px;
+    padding: 10px;
     flex-direction: column;
     justify-content: center;
 }
@@ -260,10 +293,7 @@ h2 {
 
 .afficher_plus {
     padding-left: 40px;
-<<<<<<< HEAD
-=======
     padding-bottom: 20px;
->>>>>>> gh-pages
     font-weight: bold;
 }
 
@@ -276,11 +306,7 @@ h2 {
 }
 
 .article_hebergement {
-<<<<<<< HEAD
-    margin: 20px 0 20px 0;
-=======
-    margin: 15px 0 15px 0;
->>>>>>> gh-pages
+    margin: 15px;
     border: 5px solid white;
     background-color: white;
     border-radius: 15px;
@@ -298,12 +324,8 @@ h2 {
 
 .image img {
     width: 100%;
-    object-fit: cover;
     border-radius: 10px 10px 0 0;
-<<<<<<< HEAD
-=======
     object-fit: cover;
->>>>>>> gh-pages
 }
 
 .description_hebergement {
@@ -332,13 +354,10 @@ h2 {
 
 i {
     color: #0065FC;
-<<<<<<< HEAD
 }
 
 span i {
     color:#e2dede;
-=======
->>>>>>> gh-pages
 }
 
 span i {
@@ -361,19 +380,13 @@ span i {
 .bloc_populaire {
     background-color: #f2f2f2;
     border-radius: 20px;
-    width: 420px;
+    width: 400px;
+    padding: 10px;
     display: flex;
-<<<<<<< HEAD
     flex-direction: column; 
 }
 
-#les_plus_populaires { 
-=======
-    flex-direction: column;
-}
-
 #les_plus_populaires {
->>>>>>> gh-pages
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 20px;
@@ -384,7 +397,6 @@ span i {
 }
 
 .blocs_articles_populaire {
-    max-width: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,39 +407,36 @@ span i {
 .article_populaire {
     border-radius: 15px;
     border: 5px solid white;
-    max-width: 335px;
+    width: 335px;
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-<<<<<<< HEAD
-    
-=======
     overflow: hidden;
->>>>>>> gh-pages
 }
 
-.image_populaire {
-    max-width: 130px;
+.image_populaire_soleil,
+.image_populaire_bleu {
+    width: 130px;
+    height: 134px;
+}
+
+.image_populaire_eau {
+    width: 185px;
     height: 134px;
     display: flex;   
     
 }
 
-.image_populaire img {
+.image_populaire_soleil img,
+.image_populaire_eau img,
+.image_populaire_bleu img {
     width: 100%;
+    height: 100%;
     border-radius: 10px 0 0 10px;
-<<<<<<< HEAD
     object-fit: cover; /*permet de régler l'image*/
 }
 
 .descriptif_populaire {
-    max-width: 205px;
-=======
-    object-fit: cover;
-}
-
-.descriptif_populaire {
->>>>>>> gh-pages
     background-color: white;
     border-radius: 0 10px 10px 0;
 }
@@ -453,6 +462,7 @@ span i {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -597,86 +607,30 @@ footer {
     padding-left: 50px;
 }
 
-<<<<<<< HEAD
- footer ul {
-=======
 footer ul {
->>>>>>> gh-pages
     list-style-type: none;
     line-height: 2em;
-    padding-left: 50px;
 }
 
 
 /*------------------------------------media queries --------------------------------*/
 
-<<<<<<< HEAD
-@media all and  (max-width: 1315px) {
-
-.hebergement_populaire {   
-    justify-content: center;
-}   
-
-.bloc_populaire {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-  
-} 
-
-
-@media all and ( max-width: 1214px) {
-    
-    .bloc_colonnes_activites {
-        justify-content: space-around;
-    }
-
-    #activites {
-        margin-left: 75px;
-    } 
-
-    .bloc_dame, .bloc_longchamp {
-    margin-top: 20px;
-    }
-}
-
-@media all and ( max-width: 915px) {
-    
-    .bloc_calanques {
-        margin-top: 20px;
-    }
-}
-
-@media all and (max-width: 615px) {
-    
-
-    .hebergement_populaire {
-        flex-wrap: wrap-reverse;
-    }
-    
-    #activites{
-        margin-left: 20px;
-    }
-
-    .bloc_fort, .bloc_lunette, .bloc_dame, .bloc_longchamp {
-        margin-top: 20px;
-    }
-
-    .container {
-        flex-direction: column;
-        justify-content: space-between;
-=======
-@media all and (max-width: 1315px) {
+@media all and (max-width: 1299px) {
 
     .hebergement_populaire {
         justify-content: center;
     }
 
     .bloc_populaire {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 860px;
+        margin: 10px 0;
     }
 
+    .blocs_articles_populaire {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 
@@ -685,25 +639,14 @@ footer ul {
     .bloc_dame,
     .bloc_longchamp {
         margin-top: 20px;
->>>>>>> gh-pages
+    }
+
+    .bloc_colonnes_activites {
+        justify-content: space-around;
     }
 }
 
-<<<<<<< HEAD
-    .colonne_footer1, .colonne_footer2, .colonne_footer3 {
-        width: 100%;
-    }
-
-    .ligne_couleur {
-        display: flex;
-    }
-    
-=======
 @media all and (max-width: 915px) {
-
-    .bloc_colonnes_activites {
-        justify-content: space-evenly;
-    }
 
     .bloc_calanques {
         margin-top: 20px;
@@ -716,6 +659,19 @@ footer ul {
 
     .hebergement_populaire {
         flex-wrap: wrap-reverse;
+    }
+
+    .bloc_populaire,
+    .bloc_hebergement {
+        border-radius: unset;
+    }
+
+    .blocs_articles_populaire {
+        justify-content: center;
+    }
+
+    .section_activites {
+        margin-top: 0px;
     }
 
     .bloc_fort,
@@ -737,84 +693,6 @@ footer ul {
     .colonne_footer3 {
         width: 100%;
     }
-
-    .ligne_couleur {
-        display: flex;
-    }
-
->>>>>>> gh-pages
-    .ligne_bleu {
-        width: 50%;
-        border: 3px solid #0065FC;
-    }
-
-    .ligne_grise {
-        width: 50%;
-        border: 3px solid #f2f2f2;
-    }
-<<<<<<< HEAD
-}
-
-@media all and ( max-width: 440px) {
-    
-    
-    nav {
-        position: relative;
-    }
-
-    .inscrire {
-        position: absolute;
-        right: 0px;
-        top: -40px;
-        font-weight: bold;
-    }
-
-    input[type="button"] {
-        width: 50px;
-        font-size: 0px;
-    }
-
-    .Rechercher {
-        position: relative;
-    }
-
-    .Rechercher .fas {
-        position: absolute;
-        font-size: 100%;
-        color: white;
-        right: 20px;
-        top: 15px;
-    }
-
-    .economique {
-        width: 175px;
-    }
-
-    .familial {
-        width: 140px;
-    }
-
-    .article_hebergement {
-        width: 325px;
-    }
-
-    .bloc_port, .bloc_calanques, .bloc_fort, .bloc_lunette, .bloc_dame, .bloc_longchamp {
-        width: 335px;
-        height:190px;
-    }
-
-    .photo_port, .photo_calanques, .photo_fort, .photo_lunette, .photo_dame, .photo_longchamp {
-        height: 135px;
-    }
-
-    .container h2, .container ul {
-        padding-left: 20px;
-    }
-
-    
-}
-
-=======
 
     .bloc_port,
     .bloc_fort,
@@ -845,20 +723,48 @@ footer ul {
 @media all and (max-width: 440px) {
 
 
-    nav {
+    header {
+        flex-direction: column;
+    }
+    
+    .header__nav {
         position: relative;
+        flex-direction: column-reverse;
+        /* max-width: 440px; */
+    }
+
+    .activites {
+        padding-left: 50px;
     }
 
     .inscrire {
         position: absolute;
-        right: 0px;
+        right: 55px;
         top: -40px;
         font-weight: bold;
+    }
+
+    .ligne_couleur {
+        display: flex;
+    }
+
+    .ligne_bleu {
+        width: 50%;
+        border: 1px solid #0065FC;
+    }
+
+    .ligne_grise {
+        width: 50%;
+        border: 1px solid #f2f2f2;
     }
 
     input[type="button"] {
         width: 50px;
         font-size: 0px;
+    }
+
+    .bloc_rechercher {
+        justify-content: center;
     }
 
     .Rechercher {
@@ -873,14 +779,10 @@ footer ul {
         top: 15px;
     }
 
-    .economique {
-        width: 175px;
-    }
-
     .bloc_hebergement {
         background-color: unset;
     }
-    
+
     .article_hebergement {
         width: 320px;
     }
@@ -890,4 +792,3 @@ footer ul {
         height: 115px;
     }
 }
->>>>>>> gh-pages
